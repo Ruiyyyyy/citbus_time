@@ -18,7 +18,7 @@ fi
 
 # テスト2: 最終バス後
 out=$(echo -e "$timetable" | ./CITbus_time 13:00)
-expected="No service remaining today."
+expected="本日の便は終了しました"
 
 if [ "$out" = "$expected" ]; then
     echo "Test 2 OK: Handled end of service"
@@ -29,7 +29,7 @@ fi
 
 # テスト3: ジャストの時刻
 out=$(echo -e "$timetable" | ./CITbus_time 10:00)
-expected="10:00 (あと 10分)"
+expected="10:00 (あと 0分)"
 
 if [ "$out" = "$expected" ]; then
     echo "Test 3 OK: Handled exact time match"
