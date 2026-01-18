@@ -1,3 +1,6 @@
+[![test](https://github.com/Ruiyyyyy/CITbus_time/actions/workflows/test.yml/badge.svg)](https://github.com/Ruiyyyyy/CITbus_time/actions/workflows/test.yml)
+
+
 # CITbau_time コマンド
 
 標準入力から時刻表データ（HH:MM形式）を読み込み、現在時刻から見て「次の便」の時刻と待ち時間を表示するコマンドです。
