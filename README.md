@@ -48,9 +48,7 @@ $ cat tudanuma_bus.txt | ./CITbus_time 10:00
 $ cat innarasino_bus.txt | ./CITbus_time 10:00
 10:35 (あと 15分)
 ```
-- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許
-可されます．
-- © 2025 Ryu Taniguchi
+
 ## 必要な環境
 *Linux環境
 Python 3.7+
