@@ -6,7 +6,7 @@
 timetable="09:00\n10:00\n10:30\n11:00\n12:00"
 
 # テスト1: 正常系
-out=$(echo -e "$timetable" | ./nextbus 10:15)
+out=$(echo -e "$timetable" | ./CITbus_time 10:15)
 expected="10:30 (Wait: 15 min)"
 
 if [ "$out" = "$expected" ]; then
@@ -17,7 +17,7 @@ else
 fi
 
 # テスト2: 最終バス後
-out=$(echo -e "$timetable" | ./nextbus 13:00)
+out=$(echo -e "$timetable" | ./CITbus_time 13:00)
 expected="No service remaining today."
 
 if [ "$out" = "$expected" ]; then
@@ -28,7 +28,7 @@ else
 fi
 
 # テスト3: ジャストの時刻
-out=$(echo -e "$timetable" | ./nextbus 10:00)
+out=$(echo -e "$timetable" | ./CITbus_time 10:00)
 expected="10:00 (Wait: 0 min)"
 
 if [ "$out" = "$expected" ]; then
