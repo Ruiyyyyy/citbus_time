@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-# SPDX-FileCopyrightText: 2025 Ryu Taniguchi
+# SPDX-FileCopyrightText: 2026 Ryu Taniguchi
 # SPDX-License-Identifier: BSD-3-Clause
-
 import sys
-from datetime import datetime, timedelta
+import os
+from datetime import datetime
 
 def main():
     if len(sys.argv) > 1:
         try:
             now = datetime.strptime(sys.argv[1], "%H:%M")
+            now = now.replace(year=datetime.now().year, 
+                              month=datetime.now().month, 
+                              day=datetime.now().day)
         except ValueError:
             now = datetime.now()
     else:
@@ -17,8 +20,23 @@ def main():
     current_time = now.replace(second=0, microsecond=0)
         
     candidates = []
+    lines = []
 
-    for line in sys.stdin:
+    input_source = sys.stdin.read().strip()
+
+    if not input_source:
+        return
+
+    if os.path.isfile(input_source):
+        try:
+            with open(input_source, 'r') as f:
+                lines = f.readlines()
+        except OSError:
+            lines = input_source.splitlines()
+    else:
+        lines = input_source.splitlines()
+
+    for line in lines:
         line = line.strip()
         if not line:
             continue
