@@ -13,8 +13,7 @@
 
 ```bash
 $ git clone https://github.com/Ruiyyyyy/CITbus_time.git
-$ cd robosys2025
-$ cd kadai3
+$ cd CITbus_time
 ```
 
 必要に応じて実行権限を付与してください。
