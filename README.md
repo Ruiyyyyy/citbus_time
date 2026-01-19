@@ -7,10 +7,12 @@
 通学バスや電車の待ち時間確認などに利用できます。
 なおバスのダイヤは千場工業大学の冬季期間(2026/1/8から2/21)の月曜から金曜日の平日のものとなっています。
 
-## インストール方法
+## 準備1
+
+以下のコマンドを順番に実行してください。リポジトリを取り込み、作業用ディレクトリへ移動します。
 
 ```bash
-$ git clone [https://github.com/Ruiyyyyy/robosys2025_hw.git$](https://github.com/Ruiyyyyy/robosys2025_hw.git$) cd robosys2025_hw
+$ git clone [https://github.com/Ruiyyyyy/robosys2025.git$](https://github.com/Ruiyyyyy/robosys2025.git$) cd robosys2025
 $ cd kadai3
 ```
 
@@ -19,7 +21,7 @@ $ cd kadai3
 $ chmod +x CITbus_time
 ```
 
-## 準備
+## 準備2
 
 時刻表を記述したテキストファイルを用意します。記述順序は関係なく動作します。
 津田沼から新習志野行き(tudanuma_bus.txt)、新習志野から津田沼行き(sinnarasino_bus.txt)の2つのテキストファイルがあります。
