@@ -29,7 +29,6 @@ $ chmod +x CITbus_time
 ### 実行例
 
 標準入力から時刻データを入れると現在時刻から最も近い次の便を表示します。
-時刻データは必ず00:00~23:59の間で入力してください
 
 ```bash
 $ echo tudanuma_bus.txt | ./CITbus_time
@@ -43,7 +42,7 @@ $ echo sinnarasino_bus.txt | ./CITbus_time
 ```
 
 引数に時刻(HH:MM)を指定するとその時刻から最も近い次の便を表示します。
-
+時刻データは必ず00:00~23:59の間で入力してください
 ```bash
 $ echo tudanuma_bus.txt | ./CITbus_time 10:00
 10:35 (あと 35 分)
