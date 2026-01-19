@@ -12,7 +12,8 @@
 以下のコマンドを順番に実行してください。リポジトリを取り込み、作業用ディレクトリへ移動します。
 
 ```bash
-$ git clone [https://github.com/Ruiyyyyy/robosys2025.git$](https://github.com/Ruiyyyyy/robosys2025.git$) cd robosys2025
+$ git clone [https://github.com/Ruiyyyyy/robosys2025.git$](https://github.com/Ruiyyyyy/robosys2025.git$) 
+$ cd robosys2025
 $ cd kadai3
 ```
 
