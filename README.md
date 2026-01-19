@@ -51,7 +51,7 @@ $ echo tudanuma_bus.txt | ./CITbus_time 10:00
 
 
 ```bash
-$ echo innarasino_bus.txt | ./CITbus_time 10:00
+$ echo sinnarasino_bus.txt | ./CITbus_time 10:00
 10:35 (あと 15分)
 ```
 
