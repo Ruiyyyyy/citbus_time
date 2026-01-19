@@ -12,7 +12,7 @@
 以下のコマンドを順番に実行してください。リポジトリを取り込み、作業用ディレクトリへ移動します。
 
 ```bash
-$ git clone [https://github.com/Ruiyyyyy/robosys2025.git$](https://github.com/Ruiyyyyy/robosys2025.git$) 
+$ git clone https://github.com/Ruiyyyyy/CITbus_time.git
 $ cd robosys2025
 $ cd kadai3
 ```
@@ -56,9 +56,9 @@ $ cat innarasino_bus.txt | ./CITbus_time 10:00
 ```
 
 ## 必要な環境
-* Linux環境
+* Linux環境 Ubuntu24.04LTS
 * Python 3.7+
-
+* Python 3.10+
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許
 可されます．
