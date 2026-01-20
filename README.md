@@ -1,7 +1,7 @@
 [![test](https://github.com/Ruiyyyyy/CITbus_time/actions/workflows/test.yml/badge.svg)](https://github.com/Ruiyyyyy/CITbus_time/actions/workflows/test.yml)
 
 
-# CITbus_time コマンド
+# citbus_time コマンド
 
 標準入力から時刻表データ（HH:MM形式）を読み込み、現在時刻から見て「次の便」の時刻と待ち時間を表示するコマンドです。
 通学バスや電車の待ち時間確認などに利用できます。
@@ -12,13 +12,13 @@
 以下のコマンドを順番に実行してください。リポジトリを取り込み、作業用ディレクトリへ移動します。
 
 ```bash
-$ git clone https://github.com/Ruiyyyyy/CITbus_time.git
-$ cd CITbus_time
+$ git clone https://github.com/Ruiyyyyy/citbus_time.git
+$ cd citbus_time
 ```
 
 必要に応じて実行権限を付与してください。
 ```
-$ chmod +x CITbus_time
+$ chmod +x citbus_time
 ```
 
 ## 準備2
